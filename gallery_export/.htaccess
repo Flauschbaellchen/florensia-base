@@ -1,0 +1,9 @@
+<IfModule mod_rewrite.c>
+	RewriteEngine on
+
+RewriteRule ^[0-9]+$ 404
+
+	<IfModule mod_env.c>
+		SetEnv SEO_SUPPORT 1
+	</IfModule>
+</IfModule>

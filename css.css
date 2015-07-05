@@ -1,0 +1,320 @@
+ body { font-size:12px; font-family:Verdana; color:#FFFFFF;} 
+
+ a:link { text-decoration:none; color:#8CE0FF; }
+ a:visited { text-decoration:none; color:#8CE0FF; }
+ a:hover { text-decoration:none; color:#8CE0FF; }
+ a:active { text-decoration:none; }
+
+ table { font-size:100%; border-collapse:separate; border-spacing:0px; padding:0px; margin:0px; empty-cells:show;}
+ td { text-align:left; vertical-align:top;}
+ textarea, input, select {
+	border: 1px solid #6D87A9;
+	color: #000000;
+	font-size: 11px;
+	background-color:#D2EDFF;
+	filter:alpha(opacity=80); /* IE */
+	-moz-opacity:0.8; /* Gecko-Browser */
+	opacity:0.8; /* Opera 9+ */
+ }
+ 
+.button {
+       padding:1px 7px 1px 7px;
+       border: 1px solid #6D87A9;
+       color: #000000 !important;
+       font-size: 11px;
+       background-color:#D2EDFF;
+       filter:alpha(opacity=80); /* IE */
+       -moz-opacity:0.8; /* Gecko-Browser */
+       opacity:0.8; /* Opera 9+ */
+}
+
+.quicksubmit {
+       width:18px;
+       height:18px;
+       background-image:url('http://www.florensia-base.com/layer/searchstart.png');
+       background-repeat:no-repeat;
+}
+
+.sitemenu { font-weight:bold; }
+.sitemenu a:link { color:#FFFFFF;}
+.sitemenu a:visited { color:#FFFFFF; }
+.sitemenu a:hover { color:#0c9ed4; }
+
+.archiv { text-decoration:line-through !important; }
+.small { font-size:10px; }
+.bordered {
+	border-width:1px; 
+	border-color:#88a9d4;
+	border-style:solid;
+	margin-top:2px;
+	margin-bottom:2px;
+	padding-left:1px;
+	padding-right:1px;
+}
+.subtitle {
+	background-color: #496f96; color:#FFFFFF; font-weight:bold;
+	border-width:1px; 
+	border-color:#88a9d4;
+	border-style:solid;
+	margin-top:2px;
+	margin-bottom:2px;
+	padding-left:1px;
+	padding-right:1px;
+}
+.warning {
+	border-width:1px; 
+	border-color:#6d0601;
+	border-style:solid;
+	margin-top:2px;
+	margin-bottom:2px;
+	padding-left:1px;
+	padding-right:1px;
+}
+
+.successful {
+	border-width:1px; 
+	border-color:#00EC10;
+	border-style:solid;
+	margin-top:2px;
+	margin-bottom:2px;
+	padding-left:1px;
+	padding-right:1px;
+}
+
+.diff_new {
+	border-width:1px; 
+	border-color:#45D456;
+	border-style:solid;
+	margin-top:2px;
+	margin-bottom:2px;
+	padding-left:5px;
+	padding-right:5px;
+}
+
+.diff_changed {
+	border-width:1px; 
+	border-color:#DDEA64;
+	border-style:solid;
+	margin-top:2px;
+	margin-bottom:2px;
+	padding-left:5px;
+	padding-right:5px;
+}
+
+.diff_deleted {
+	border-width:1px; 
+	border-color:#6d0601;
+	border-style:solid;
+	margin-top:2px;
+	margin-bottom:2px;
+	padding-left:5px;
+	padding-right:5px;
+}
+
+.market_sell {
+	border-width:2px; 
+	border-color:#45D456;
+	border-style:solid;
+	margin-top:2px;
+	margin-bottom:2px;
+	padding-left:5px;
+	padding-right:5px;
+}
+
+.market_buy {
+	border-width:2px; 
+	border-color:#DDEA64;
+	border-style:solid;
+	margin-top:2px;
+	margin-bottom:2px;
+	padding-left:5px;
+	padding-right:5px;
+}
+
+.shortinfo_0 {
+	background-color:#496f96;
+	margin-top:2px;
+	margin-bottom:2px;
+	border-width:1px; 
+	border-color:#88a9d4;
+	border-style:solid;
+	padding-left:1px;
+	padding-right:1px;
+}
+.shortinfo_1 {
+	background-color:#396087;
+	margin-top:2px;
+	margin-bottom:2px;
+	border-width:1px; 
+	border-color:#88a9d4;
+	border-style:solid;
+	padding-left:1px;
+	padding-right:1px;
+}
+.shortinfo_droplist_verified {
+	background-color:#396087;
+	margin-top:2px;
+	margin-bottom:2px;
+	border-width:1px; 
+	border-color:#00EC10;
+	border-style:solid;
+	padding-left:1px;
+	padding-right:1px;
+}
+
+.shortinfo_droplist_questentry {
+	background-color:#396087;
+	margin-top:2px;
+	margin-bottom:2px;
+	border-width:1px; 
+	border-color:#cfd700;
+	border-style:solid;
+	padding-left:1px;
+	padding-right:1px;
+}
+
+.inactiveentry {
+       color:#c3c3c3;
+}
+
+.pagination {
+	border:1px solid #81A2C4;
+	margin-bottom:3px;
+	padding:1px 3px;
+	margin-right:2px;
+}
+
+.pagination_current {
+	background:#75B2F0 none repeat scroll 0 0;
+	border:1px solid #81A2C4;
+	font-weight:bold;
+	margin-bottom:3px;
+	padding:1px 3px;
+	margin-right:2px;
+}
+
+
+.tabbar {
+	margin-bottom: 10px;
+        padding-top:10px;
+}
+.tabbar ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	height: 40px;
+	border-bottom: 1px solid #81A2C4;
+}
+
+.tabbar li, .tabbar_small li {
+	float: left;
+	padding-right: 5px;
+}
+
+
+
+.tabbar li a {
+	float: left;
+	border: 1px solid #81A2C4;
+	border-bottom: 0;
+	display: block;
+	font-size: 140%;
+	padding: 3px 8px 4px;
+	height: 32px;
+}
+
+.tabbar li .inactive {
+        color:#a2a8ae;
+	float: left;
+	border: 1px solid #a2a8ae;
+	border-bottom: 0;
+	display: block;
+	font-size: 140%;
+	padding: 3px 8px 4px;
+	height: 32px;
+}
+
+
+.tabbar_small {
+	margin-bottom: 5px;
+        padding-top:2px;
+}
+
+.tabbar_small ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	height: 36px;
+	border-bottom: 1px solid #81A2C4;
+}
+
+.tabbar_small li a {
+	float: left;
+	border: 1px solid #81A2C4;
+	border-bottom: 0;
+	display: block;
+	font-size: 120%;
+	padding: 3px 2px 4px;
+	height: 28px;
+}
+
+.tabbar_small li .inactive {
+        color:#a2a8ae;
+	float: left;
+	border: 1px solid #a2a8ae;
+	border-bottom: 0;
+	display: block;
+	font-size: 140%;
+	padding: 3px 2px 4px;
+	height: 28px;
+}
+
+/*
+.tabbar li a:hover {
+	background: #75B2F0;
+	text-decoration: none;
+        color: #396087;
+}
+*/
+	 
+.tabbar_active {
+	font-weight: bold;
+	background: #75B2F0;
+        color: #396087;
+}
+
+
+
+/* gallery */
+.gallerylist {
+       #background:none repeat scroll 0 0 #0A0A0A;
+       #border:1px solid #292929;
+       display:inline-block;
+       #font-size:13px;
+       margin:10px 59px 13px 10px;
+       position:relative;
+       vertical-align:top;
+       width:auto;
+}
+
+.thumbnail {
+	-moz-border-radius:4px 4px 4px 4px;
+	#-moz-box-shadow:0 1px 3px #88a9d4;
+
+	background:none repeat scroll 0 0 #496f96;
+	border:1px solid #88a9d4;
+	display:inline-block;
+	font-size:13px;
+	#margin:10px 13px 13px 10px;
+	position:relative;
+	vertical-align:middle;
+	width:auto;
+        padding:3px;
+}
+
+.thumbnail:hover {
+	-moz-box-shadow:0 1px 3px #000000;
+	background:none repeat scroll 0 0 #496f96;
+}
+
+.gallerylist a{margin:0;padding:0;border:0;outline:0;vertical-align:baseline;background:transparent;line-height:1}

@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<skilltree createdate="2010-10-06 11:55:45 / 1286366145"><skilltree_title>Albero delle skill</skilltree_title><skilltree_overview_allclasses>Tutte le classi</skilltree_overview_allclasses><skilltree_shortview_requieredskills>Skill richieste:</skilltree_shortview_requieredskills><skilltree_shortview_maxlevel>Livello massimo</skilltree_shortview_maxlevel><skilltree_shortview_sealevel>Livello land:</skilltree_shortview_sealevel><skilltree_shortview_landlevel>Livello sea:</skilltree_shortview_landlevel><skilltree_overview_noentry>Non &#xE8; stata trovata nessuna skill</skilltree_overview_noentry><skilltree_placeholder_level_null>Level 0:&#xD;
+L'abilit&#xE0; non &#xE8; attiva. Clicca su "+" per attivarla.</skilltree_placeholder_level_null></skilltree>

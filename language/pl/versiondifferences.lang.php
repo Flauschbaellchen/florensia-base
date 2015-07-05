@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<versiondifferences createdate="2010-04-16 20:20:54 / 1271442054"><diff_select_title>Wybierz dane, kt&#xF3;re chcesz por&#xF3;wna&#x107;:</diff_select_title><diff_legend_newentries>Nowe Wpise</diff_legend_newentries><diff_legend_changedentries>Zmiana wpise</diff_legend_changedentries><diff_legend_removedentries>Usuwanie wpise</diff_legend_removedentries><diff_error_loadfile>Wyst&#x105;pi&#x142; b&#x142;&#x105;d podczas &#x142;adowania pliku. Prosimy o kontaktowanie administratora&#xD;
+&#xD;
+.</diff_error_loadfile><diff_error_notfound>Podany plik nie zosta&#x142; odnaleziony.</diff_error_notfound><diff_inentry_noentry>&#x17C;aden wpis</diff_inentry_noentry><diff_inentry_removed>Usuwanie</diff_inentry_removed><diff_subtitle_items>Iteme</diff_subtitle_items><diff_subtitle_quests>Queste</diff_subtitle_quests><diff_subtitle_maps>Mapy</diff_subtitle_maps><diff_subtitle_npcs>NPCe</diff_subtitle_npcs></versiondifferences>

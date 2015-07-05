@@ -22,5 +22,5 @@ It's way better, faster and cleaner than the "old" update script.
 
 ---
 
-Currently only the update script and the basic db-schema has been uploaded into the repository.
-All other files (and data) is going to be added as soon as FloBase has been closed finally.
+All artwork or anything other game-related is copyright by its respective owners.
+If you want to build a webpage using the data in this repository remember to cite them - and FloBase as well. Thanks.

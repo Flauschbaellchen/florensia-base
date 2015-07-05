@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<skilltree createdate="2010-06-01 19:27:50 / 1275413270"><skilltree_title>Skilltrees</skilltree_title><skilltree_overview_allclasses>All classes</skilltree_overview_allclasses><skilltree_shortview_requieredskills>Required Skills:</skilltree_shortview_requieredskills><skilltree_shortview_maxlevel>Max. Level</skilltree_shortview_maxlevel><skilltree_shortview_sealevel>Level morski:</skilltree_shortview_sealevel><skilltree_shortview_landlevel>Level ziemski:</skilltree_shortview_landlevel><skilltree_overview_noentry>No skill were found</skilltree_overview_noentry><skilltree_placeholder_level_null>Level 0:&#xD;
+Skill ist nicht aktiv. Klick auf die Schaltfl&#xE4;chen zum &#xE4;ndern.</skilltree_placeholder_level_null></skilltree>

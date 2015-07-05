@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<donate createdate="2010-10-18 18:17:12 / 1287425832"><donate_donatorlist_title>List of generous donators</donate_donatorlist_title><donate_notice>This website is a private project and costs a lot of money to host the website and pay the traffic (around {1}/month).&#xD;
+We would be very happy if the users not only visit and use the site but also support it so the project can stay alive.&#xD;
+It would be fantastic if you could contribute something via paypal by clicking on the image below. Thanks!</donate_notice><donate_donatorlist_date>[b]{1}[/b] by {2} on {3}</donate_donatorlist_date><donate_startpage_title>FloBase is there if you need it - now FloBase needs you!</donate_startpage_title><donate_startpage_donatetext>I want to thank all generous donaters very much - the goal of 200&#x20AC; is reached and also breaked through.&#xD;
+You may find a list of all donators on the right side, ordered by amount and time of the donation.&#xD;
+For more information, e.g. why exactly 200&#x20AC; and what a new server is upcoming, read the news on the forum.&#xD;
+&#xD;
+If someone wants to donate something further please don't forget your nickname on the transaction and I will set you on the list as soon as possible.&#xD;
+Again: Thank you very much!&#xD;
+</donate_startpage_donatetext><donate_startpage_bottomnotice>Donations will be used for FloBase and not for anything else! [b]Sponsors are welcome![/b] Contact webmaster[at]florensia-base[dot]com.</donate_startpage_bottomnotice><donate_paypalfees>Paypal Fees</donate_paypalfees><donate_linktodonatepage>Do you like Florensia Base? - Please support it by donating.</donate_linktodonatepage><donate_currentmonth_title>Current month</donate_currentmonth_title><donate_lastmonth_title>Last month</donate_lastmonth_title><donate_anonym>Anonymous</donate_anonym><donate_anonym_donatenotice>Don't forget to specify a name to display within the additional note box if you don't want to donate anonymously.</donate_anonym_donatenotice><donate_donatorlist_donationamount>{1} donation(s)</donate_donatorlist_donationamount></donate>

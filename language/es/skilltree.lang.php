@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<skilltree createdate="2009-11-14 02:47:17 / 1258163237"><skilltree_title>Arboles de skill</skilltree_title><skilltree_overview_allclasses>Todas las clases</skilltree_overview_allclasses><skilltree_shortview_requieredskills>Skills requeridas:</skilltree_shortview_requieredskills><skilltree_shortview_maxlevel>Nivel m&#xE1;ximo.</skilltree_shortview_maxlevel><skilltree_shortview_sealevel>Nivel Sea:</skilltree_shortview_sealevel><skilltree_shortview_landlevel>Nivel Land:</skilltree_shortview_landlevel><skilltree_overview_noentry>Skill no encontrada.</skilltree_overview_noentry><skilltree_placeholder_level_null>Level 0:&#xD;
+Skill no activa. Click en boton para cambiar.</skilltree_placeholder_level_null></skilltree>

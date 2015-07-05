@@ -1,0 +1,2 @@
+<?xml version="1.0"?>
+<map createdate="2009-12-03 15:27:33 / 1259850453"><coordnotice>T&#xFC;m yerlerin zaman&#x131; ge&#xE7;ti ve kald&#x131;r&#x131;ld&#x131;. K&#x131;sa s&#xFC;re i&#xE7;inde g&#xFC;ncellenecektir.</coordnotice><map_display_javamouseover_tipp>[b]&#x130;pucu:[/b] Canavarlar&#x131;n do&#x11F;du&#x11F;u noktalar&#x131; g&#xF6;rmek i&#xE7;in fareyi &#xFC;zerine g&#xF6;t&#xFC;r&#xFC;n.</map_display_javamouseover_tipp></map>

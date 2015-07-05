@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<skilltree createdate="2009-12-28 21:33:05 / 1262032385"><skilltree_title>Skilltrees</skilltree_title><skilltree_overview_allclasses>All classes</skilltree_overview_allclasses><skilltree_shortview_requieredskills>Required Skills:</skilltree_shortview_requieredskills><skilltree_shortview_maxlevel>Max. Level</skilltree_shortview_maxlevel><skilltree_shortview_sealevel>Sea Level:</skilltree_shortview_sealevel><skilltree_shortview_landlevel>Land Level:</skilltree_shortview_landlevel><skilltree_overview_noentry>No skill were found</skilltree_overview_noentry><skilltree_placeholder_level_null>Level 0:&#xD;
+Skill is not active. Click the buttons to change.</skilltree_placeholder_level_null></skilltree>

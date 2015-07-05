@@ -1,0 +1,148 @@
+
+<IfModule mod_rewrite.c>
+	RewriteEngine on
+
+        #RewriteCond %{HTTP_HOST} ^forum.florensia-base.com$ [NC]
+        #RewriteCond %{REQUEST_URI} !/forum/
+        #RewriteRule ^(.*)$ ./forum/$1 [L]
+
+        #RewriteCond %{HTTP_HOST} ^forum.florensia-base.com$ [NC]
+        
+        RewriteCond %{REQUEST_URI} !/signature_down.png
+	RewriteRule ^signature /signature_down.png [L,R=301]
+	
+        RewriteRule ^usercp\.php http://forum.florensia-base.com/usercp.php [L,QSA,R=301]
+
+	RewriteRule /init.php$ /var/www/web/florensia/init.php [L,QSA]
+	RewriteRule /confg.php$ /var/www/web/florensia/confg.php [L,QSA]
+
+	RewriteRule ^news$ index.php [L,QSA]
+
+	RewriteRule ^itemoverview/page-([0-9]+) items.php?page=$1 [L,QSA]
+	RewriteRule ^itemoverview$ items.php [L,QSA]
+	RewriteRule ^itemcategorie/([a-z]+)/page-([0-9]+) items.php?itemcat=$1&page=$2 [L,QSA]
+	RewriteRule ^itemcategorie/([a-z]+) items.php?itemcat=$1&page=1 [L,QSA]
+	RewriteRule ^itemdetails/([a-z0-9]+)/ items.php?itemid=$1 [L,QSA]
+
+	RewriteRule ^npcdetails/([A-Za-z0-9]+)/ npcs.php?npcid=$1 [L,QSA]
+	RewriteRule ^npcoverview/level-0-0/type-([A-Za-z]+)/page-([0-9]+) npcs.php?type=$1&page=$2 [L,QSA]
+	RewriteRule ^npcoverview/level-([0-9]+)-([0-9]+)/type-([A-Za-z]+)/page-([0-9]+) npcs.php?level=$1&type=$3&page=$4 [L,QSA]
+	RewriteRule ^npcoverview$ npcs.php [L,QSA]
+
+	RewriteRule ^questdetails/([A-Za-z0-9]+)/ quests.php?questid=$1 [L,QSA]
+	RewriteRule questdetails$ http://www.florensia-base.com/questoverview [L,QSA]
+	RewriteRule ^questoverview/level-0-0/type-([a-z]+)/page-([0-9]+) quests.php?questtype=$1&page=$2 [L,QSA]
+	RewriteRule ^questoverview/level-([0-9]+)-([0-9]+)/type-([a-z]+)/page-([0-9]+) quests.php?level=$1&questtype=$3&page=$4 [L,QSA]
+	RewriteRule ^questoverview/page-([0-9]+) quests.php?page=$1 [L,QSA]
+	RewriteRule ^questoverview$ quests.php [L,QSA]
+
+	RewriteRule ^usermarket/page-([0-9]+) usermarket.php?page=$1 [L,QSA]
+	RewriteRule ^usermarket/([0-9]+)/ usermarket.php?userid=$1 [L,QSA]
+	RewriteRule ^usermarket$ usermarket.php?userid=0 [L,QSA]
+
+	RewriteRule ^usercharacter/([0-9]+)/ usercharacter.php?userid=$1 [L,QSA]
+	RewriteRule ^usercharacter usercharacter.php [L,QSA]
+
+	RewriteRule ^market/(sell|buy|all)/page-([0-9]+) market.php?cat=$1&page=$2 [L,QSA]
+	RewriteRule ^market/(sell|buy|all) market.php?cat=$1 [L,QSA]
+	RewriteRule ^market/page-([0-9]+) market.php?page=$1 [L,QSA]
+	RewriteRule ^market/([a-z0-9]+)/ market.php?itemid=$1 [L,QSA]
+	RewriteRule ^market_([a-z]{2}).rss market_$1.rss [L,QSA]
+	RewriteRule ^market$ market.php [L,QSA]
+
+	RewriteRule ^100floor/page-([0-9]+) 100floor.php?page=$1 [L,QSA]
+	RewriteRule ^100floor$ 100floor.php?page=1 [L,QSA]
+
+	RewriteRule ^mapdetails/([A-Za-z0-9_]+)/ maps.php?mapid=$1 [L,QSA]
+	RewriteRule ^mapoverview$ maps.php [L,QSA]
+
+	RewriteRule ^sealbreaking$ sealbreak.php [L,QSA]
+	RewriteRule ^team$ team.php [L,QSA]
+	RewriteRule ^donate$ donate.php [L,QSA]
+	RewriteRule ^chat$ ircchat.php [L,QSA]
+	RewriteRule ^contributed/([0-9]+)/[^/]+/page-([0-9]+) contributed.php?userid=$1&page=$2 [L,QSA]
+	RewriteRule ^contributed/([0-9]+)/ contributed.php?userid=$1 [L,QSA]
+	RewriteRule ^contributed$ contributed.php?userid=0 [L,QSA]
+	
+	RewriteRule ^exptool/([0-9]+)/(SeaMonster|LandMonster|AllMonsters)/([A-Za-z0-9_]+)/page-([0-9]+) exptool.php?userlevel=$1&npctype=$2&mapid=$3&page=$4 [L,QSA]
+	RewriteRule ^exptool/([0-9]+)/(SeaMonster|LandMonster|AllMonsters)/([A-Za-z0-9_]+) exptool.php?userlevel=$1&npctype=$2&mapid=$3 [L,QSA]
+	RewriteRule ^exptool/([0-9]+)/exp/(Land|Sea)/([0-9]+) exptool.php?userlevel=$1&expclass=$2&exp=$3 [L,QSA]
+	RewriteRule ^exptool$ exptool.php [L,QSA]
+
+	RewriteRule ^changelog/page-([0-9]+) changelog.php?page=$1 [L,QSA]
+	RewriteRule ^changelog$ changelog.php [L,QSA]
+
+	#RewriteRule ^sigcreate\.php$ http://www.mychars.net/signature/create [L,QSA,R=301]
+	RewriteRule ^sigcreate\.php$ sigcreate_flobase.php [L,QSA]
+	RewriteRule ^getsignature/page-([0-9]+) sigcreate_flobase.php?page=$1 [L,QSA]
+	RewriteRule ^getsignature$ sigcreate_flobase.php [L,QSA]
+
+	RewriteRule ^charactersearch charactersearch.php [L,QSA]
+	
+	RewriteRule ^adminlog/page-([0-9]+) adminlog.php?page=$1 [L,QSA]
+	RewriteRule ^adminlog$ adminlog.php [L,QSA]
+	
+	RewriteRule ^admintools/([a-z]+)/page-([0-9]+) admintools.php?tool=$1&page=$2 [L,QSA]
+	RewriteRule ^admintools/([a-z]+) admintools.php?tool=$1 [L,QSA]
+	RewriteRule ^admintools$ admintools.php [L,QSA]
+
+	RewriteRule ^skilloverview/([0-9A-Za-z]{1}|ship|WPENS)/ skilltree.php?class=$1 [L,QSA]
+	RewriteRule ^skilloverview$ skilltree.php [L,QSA]
+
+	RewriteRule ^guides/language-([a-z]{2}|all) guides.php?guideslang=$1 [L,QSA]
+	RewriteRule ^guides$ guides.php [L,QSA]
+
+	RewriteRule ^ranking/page-([0-9]+) ranking.php?page=$1 [L,QSA]
+	RewriteRule ^ranking$ ranking.php [L,QSA]
+	RewriteRule ^guildranking/page-([0-9]+) guildranking.php?page=$1 [L,QSA]
+	RewriteRule ^guildranking$ guildranking.php [L,QSA]
+
+	RewriteRule ^characterdetails/(.+) characterdetails.php?character=$1 [L,QSA]
+	RewriteRule ^characterdetails characterdetails.php [L,QSA]
+
+	RewriteRule ^guilddetails/([1-9][0-9]*)/ guilddetails.php?guildid=$1 [L,QSA]
+	RewriteRule ^guilddetails guilddetails.php [L,QSA]
+	
+	RewriteRule ^guild/wanted guildwanted.php [L,QSA]
+	
+	RewriteRule ^statistics/([A-Za-z]+) statistics.php?server=$1 [L,QSA]
+	RewriteRule ^statistics$ statistics.php [L,QSA]
+	
+	RewriteRule ^charapi/verify/(.+) charapi.php?verify=$1 [L,QSA]
+	RewriteRule ^charapi$ charapi.php [L,QSA]
+
+	RewriteRule ^gallery/upload$ gallery.php?upload [L,QSA]
+	RewriteRule ^gallery/edit/([0-9]+) gallery.php?edit=$1 [L,QSA]
+	RewriteRule ^gallery/c/([a-zA-z0-9]+)/page-([0-9]+) gallery.php?character=$1&page=$2 [L,QSA]
+	RewriteRule ^gallery/c/([a-zA-z0-9]+) gallery.php?character=$1 [L,QSA]
+	RewriteRule ^gallery/g/([0-9]+).+/page-([0-9]+) gallery.php?guild=$1&page=$2 [L,QSA]
+	RewriteRule ^gallery/g/([0-9]+) gallery.php?guild=$1 [L,QSA]
+	RewriteRule ^gallery/u/([0-9]+).+/page-([0-9]+) gallery.php?user=$1&page=$2 [L,QSA]
+	RewriteRule ^gallery/u/([0-9]+) gallery.php?user=$1 [L,QSA]
+	RewriteRule ^gallery/i/([0-9]+) gallery.php?image=$1 [L,QSA]
+	RewriteRule ^gallery/s/([0-9]+) gallery.php?show=$1 [L,QSA]
+	RewriteRule ^gallery/t/([-a-z0-9]+)/page-([0-9]+) gallery.php?tag=$1&page=$2 [L,QSA]
+	RewriteRule ^gallery/t/([-a-z0-9]+) gallery.php?tag=$1 [L,QSA]
+	RewriteRule ^gallery/page-([0-9]+) gallery.php?page=$1 [L,QSA]
+	RewriteRule ^gallery gallery.php [L,QSA]
+
+
+	#RewriteRule ^downloads/latest_client downloads.php?downloadid=7 [L,QSA]
+	RewriteRule ^downloads/latest_client downloads.php [L,QSA]
+	RewriteRule ^downloads downloads.php [L,QSA]
+
+	RewriteRule ^legalnotice legalnotice.php [L,QSA]
+
+	<IfModule mod_env.c>
+		SetEnv SEO_SUPPORT 1
+	</IfModule>
+</IfModule>
+
+#
+# If Apache is compiled with built in mod_deflade/GZIP support
+# then GZIP Javascript, CSS, HTML and XML so they're sent to
+# the client faster.
+#
+<IfModule mod_deflate.c>
+	AddOutputFilterByType DEFLATE application/x-javascript text/css text/html text/xml
+</IfModule>

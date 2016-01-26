@@ -3,6 +3,7 @@
 /market_en.rss
 /error.log
 /working
+/language/*/*_backup_*
 /forum/uploads
 /forum/admin/backups/*.sql*
 /st_de.txt
@@ -21,3 +22,4 @@
 /signature/n001.xcf
 /signature/statistics
 /images
+/api.statistics.json

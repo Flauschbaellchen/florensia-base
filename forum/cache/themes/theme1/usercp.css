@@ -1,0 +1,108 @@
+.usercp_nav_item {
+	display: block;
+	padding: 1px 0 1px 23px;
+}
+.usercp_nav_composepm {
+	background: url(../../../images/usercp/composepm.gif) no-repeat left center;
+}
+
+.usercp_nav_pmfolder {
+	background: url(../../../images/usercp/pmfolder.gif) no-repeat left center;
+}
+
+.usercp_nav_sub_pmfolder {
+	padding-left: 40px;
+	background: url(../../../images/usercp/sub_pmfolder.gif) no-repeat left center;
+}
+
+.usercp_nav_trash_pmfolder {
+	padding-left: 40px;
+	background: url(../../../images/usercp/trash_pmfolder.gif) no-repeat left center;
+}
+
+.usercp_nav_pmtracking {
+	background: url(../../../images/usercp/pmtracking.gif) no-repeat left center;
+}
+
+.usercp_nav_pmfolders {
+	background: url(../../../images/usercp/editfolders.gif) no-repeat left center;
+}
+
+.usercp_nav_profile {
+	background: url(../../../images/usercp/profile.gif) no-repeat left center;
+}
+
+.usercp_nav_email {
+	padding-left: 40px;
+	background: url(../../../images/usercp/email.gif) no-repeat left center;
+}
+
+.usercp_nav_password {
+	padding-left: 40px;
+	background: url(../../../images/usercp/password.gif) no-repeat left center;
+}
+
+.usercp_nav_username {
+	padding-left: 40px;
+	background: url(../../../images/usercp/username.gif) no-repeat left center;
+}
+
+.usercp_nav_editsig {
+	padding-left: 40px;
+	background: url(../../../images/usercp/editsig.gif) no-repeat left center;
+}
+
+.usercp_nav_avatar {
+	padding-left: 40px;
+	background: url(../../../images/usercp/avatar.gif) no-repeat left center;
+}
+
+.usercp_nav_options {
+	background: url(../../../images/usercp/options.gif) no-repeat left center;
+}
+
+.usercp_nav_usergroups {
+	background: url(../../../images/usercp/usergroups.gif) no-repeat left center;
+}
+
+.usercp_nav_editlists {
+	background: url(../../../images/usercp/editlists.gif) no-repeat left center;
+}
+
+.usercp_nav_attachments {
+	background: url(../../../images/usercp/attachments.gif) no-repeat left center;
+}
+
+.usercp_nav_drafts {
+	background: url(../../../images/usercp/drafts.gif) no-repeat left center;
+}
+
+.usercp_nav_subscriptions {
+	background: url(../../../images/usercp/subscriptions.gif) no-repeat left center;
+}
+
+.usercp_nav_fsubscriptions {
+	background: url(../../../images/usercp/fsubscriptions.gif) no-repeat left center;
+}
+
+.usercp_nav_notepad {
+	background: url(../../../images/usercp/notepad.gif) no-repeat left center;
+}
+
+.usercp_nav_viewprofile {
+	background: url(../../../images/usercp/viewprofile.gif) no-repeat left center;
+}
+
+.usercp_nav_home {
+	background: url(../../../images/usercp/home.gif) no-repeat left center;
+}
+
+.usercp_notepad {
+	width: 99%;
+}
+
+.usercp_container {
+	margin: 5px;
+	padding: 8px;
+	border:1px solid #CCCCCC;
+}

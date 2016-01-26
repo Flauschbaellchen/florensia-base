@@ -3,7 +3,8 @@
 /market_en.rss
 /error.log
 /working
-/forum
+/forum/uploads
+/forum/admin/backups/*.sql*
 /st_de.txt
 /st_de2.txt
 /pjirc

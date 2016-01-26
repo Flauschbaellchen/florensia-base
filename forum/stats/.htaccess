@@ -1,0 +1,7 @@
+AuthName "forum.florensia-base.com statistics"
+AuthType Basic
+AuthUserFile /home/florensiabase_forum/.stats-htpasswd
+require valid-user
+<Files .stats-htpasswd>
+deny from all
+</Files>

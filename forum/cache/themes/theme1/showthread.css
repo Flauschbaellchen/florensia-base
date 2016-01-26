@@ -1,0 +1,28 @@
+ul.thread_tools, ul.thread_tools li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+ul.thread_tools li {
+	padding-left: 26px;
+	padding-bottom: 4px;
+	margin-bottom: 3px;
+	font-size: 11px;
+}
+
+ul.thread_tools li.printable {
+	background: url(../../../images/printable.gif) no-repeat 0px 0px;
+}
+
+ul.thread_tools li.sendthread {
+	background: url(../../../images/send.gif) no-repeat 0px 0px;
+}
+
+ul.thread_tools li.subscription_add {
+	background: url(../../../images/subscribe.gif) no-repeat 0px 0px;
+}
+
+ul.thread_tools li.subscription_remove {
+	background: url(../../../images/unsubscribe.gif) no-repeat 0px 0px;
+}

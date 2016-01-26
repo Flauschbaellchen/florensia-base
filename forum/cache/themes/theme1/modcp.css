@@ -1,0 +1,93 @@
+.modcp_nav_item {
+	display: block;
+	padding: 1px 0 1px 23px;
+}
+
+.modcp_nav_home {
+	background: url(../../../images/modcp/home.gif) no-repeat left center;
+}
+
+.modcp_nav_announcements {
+	background: url(../../../images/modcp/announcements.gif) no-repeat left center;
+}
+
+.modcp_nav_reports {
+	background: url(../../../images/modcp/reports.gif) no-repeat left center;
+}
+
+.modcp_nav_modqueue {
+	background: url(../../../images/modcp/modqueue.gif) no-repeat left center;
+}
+
+.modcp_nav_modlogs {
+	background: url(../../../images/modcp/modlogs.gif) no-repeat left center;
+}
+
+.modcp_nav_editprofile {
+	background: url(../../../images/modcp/editprofile.gif) no-repeat left center;
+}
+
+.modcp_nav_banning {
+	background: url(../../../images/modcp/banning.gif) no-repeat left center;
+}
+
+.modcp_nav_warninglogs {
+	background: url(../../../images/modcp/warninglogs.gif) no-repeat left center;
+}
+
+.modcp_nav_ipsearch {
+	background: url(../../../images/modcp/ipsearch.gif) no-repeat left center;
+}
+
+.modqueue_message {
+	overflow: auto;
+	max-height: 250px;
+}
+
+.modqueue_controls {
+	width: 270px;
+	float: right;
+	text-align: center;
+	border: 1px solid #ccc;
+	background: #fff;
+	padding: 6px;
+	font-weight: bold;
+}
+
+.modqueue_controls label {
+	margin-right: 8px;
+}
+
+.label_radio_ignore, .label_radio_delete, .label_radio_approve {
+	font-weight: bold;
+}
+
+.modqueue_meta {
+	color: #444;
+	font-size: 95%;
+	margin-bottom: 8px;
+}
+
+.modqueue_mass {
+	list-style: none;
+	margin: 0;
+	width: 150px;
+	padding: 0;
+}
+
+.modqueue_mass li {
+	margin-bottom: 4px;
+	padding: 0;
+}
+
+.modqueue_mass li a {
+	display: block;
+	padding: 4px;
+	border: 1px solid transparent;
+}
+
+.modqueue_mass li a:hover {
+	background: #efefef;
+	border: 1px solid #ccc;
+	text-decoration: none;
+}

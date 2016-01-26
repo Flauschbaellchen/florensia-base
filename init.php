@@ -10,7 +10,7 @@
 //redirect, language
 $validsubdomains = array("de", "fr", "en", "pt", "es", "tr", "pl", "ru", "nl", "it");
 preg_match('/^([a-z]+)\./', $_SERVER['SERVER_NAME'], $subdomain);
-if ($_SERVER['SERVER_NAME']!="noxx" && !in_array($subdomain[1], $validsubdomains)) {
+if ($_SERVER['SERVER_NAME']!="localhost" && !in_array($subdomain[1], $validsubdomains)) {
 	$language = $_SERVER['HTTP_ACCEPT_LANGUAGE'];
 	if (preg_match('/^de/i', $language)) header("Location: http://de.florensia-base.com".$_SERVER['REQUEST_URI']);
 	elseif (preg_match('/^fr/i', $language)) header("Location: http://fr.florensia-base.com".$_SERVER['REQUEST_URI']);
@@ -22,91 +22,11 @@ if ($_SERVER['SERVER_NAME']!="noxx" && !in_array($subdomain[1], $validsubdomains
 	//elseif (preg_match('/^ru/i', $language)) header("Location: http://ru.florensia-base.com".$_SERVER['REQUEST_URI']);
 	//elseif (preg_match('/^pl/i', $language)) header("Location: http://pl.florensia-base.com".$_SERVER['REQUEST_URI']);
 	else header("Location: http://en.florensia-base.com".$_SERVER['REQUEST_URI']);
-} elseif ($_SERVER['SERVER_NAME']=="noxx") {
+} elseif ($_SERVER['SERVER_NAME']=="localhost") {
 	$subdomain[1]="en";
 }
 
 require_once("./confg.php");
-
-if (is_file($cfg['root_abs']."/down") && !preg_match("/Google/", $_SERVER['HTTP_USER_AGENT'])) {
-	//header("HTTP/1.1 410 Gone");
-	echo "
-		<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"
-		\"http://www.w3.org/TR/html4/loose.dtd\">
-		<html>
-			<title>Florensia Base</title>
-			<meta name='author' content='Noxx'>
-			<meta name='copyight' content='(c) 2008-2013 by www.florensia-base.com'>
-			<meta name='language' content='en'>
-			<meta name='revisit-after' content='daily'>
-			<meta name='keywords' content='Florensia,Florensia Online,Flo,Quests,Ranking,Guild,Character,Market,Guides,Items,Monsters,NPCs,Signature,Skilltree,Database,Forum,official,Fansite'>
-			<meta name='description' content='Fansite about Florensia - Join our community'>
-			<meta http-equiv='Content-Type' content='text/html;charset=utf-8'>
-			<meta name=\"verify-v1\" content=\"jstu9BbKxY9arFQGfsAANFfIpW1HGAz16XafDieYL54=\" />
-			<link rel='stylesheet' type='text/css' href='/css.css'>
-			<!--[if lt IE 8]>
-			<script src='http://ie7-js.googlecode.com/svn/version/2.0(beta3)/IE8.js' type='text/javascript'></script>
-			<![endif]-->
-			<body style='margin-width:0px; margin-height:0px; margin-top:0px; margin-left:0px; margin-right:0px; background-color:#37658a;'>
-				<div style='height:90px'></div>
-				<div style='height:380px; color:#316a91; text-align:center; border-right:none; border-left:none; background-position:center; background-image:url({$cfg['layer_rel']}/lock_placeholder.png); background-repeat:no-repeat;' class='subtitle'>
-				  <div style='padding:190px 0px 0px 260px;'>Sept. 23, 2008 - Sept. 23, 2013</div>
-				</div>
-				<div style='width:900px; padding:90px 0px 0px 0px; margin:auto; color:white;'>
-				  <div style='align:center; font-weight:bold'>Florensia-Base has been closed.</div>
-				".nl2br("
-Am 23.09.2008 erblickte Florensia-Base das Licht der Welt und wurde offiziell für alle Florensianer eröffnet.
-FloBase wurde innerhalb kürzester Zeit zur größten und beliebtesten Fanseite.
-Fünf Jahre später, am heutigen Tag, bin ich gezwungen, mich für einen Schritt zu entscheiden, denen alle schon länger gefürchtet haben.
-
-Ich schließe Flobase endgültig.
-
-Diejenigen, die schon länger bei Florensia dabei sind, werden diese Entscheidung verstehen.
-Ich möchte mich bei allen fleißigen Helfern bedanken, die es überhaupt erst ermöglicht haben, dass FloBase zu dem geworden ist, was es einmal war.
-Wir sind durch Höhen und Tiefen gegangen und ich blicke auf diese unvergessliche Zeit mit großem Stolz zurück.
-Nun ist es aber an der Zeit nach vorn zu schauen und die Nostalgie hinter sich zu lassen.
-Burda:IC/Pro7Sat1Games, eure &quot;Community-Arbeit&quot; hat mich schwer enttäuscht.
-
-Auf zu neuen Ufern - <b>Noxx</b>
-
---------
-
-On 09/23/2008 Florensia Base saw the light of day and was officially opened for all Florensians.
-FloBase quickly became the largest and most popular fan page.
-Five years later, on this day, I'm forced to choose a step which all of us have feared for a long time.
-
-I close FloBase finally.
-
-Those who are already playing Florensia for a long time will understand this decision.
-I want to thank all the hard-working helpers who made it possible that FloBase has become what it once was.
-We have gone through ups and downs and I look back on this memorable time with great pride.
-Now it is time to look forward and let the nostalgia behind.
-Burda: IC/Pro7Sat1Games, your &quot;community work&quot; has severely disappointed me.
-
-Off to new shores - <b>Noxx</b>
-
---------
-
-Export: <a href='export.html'>Gallery</a>")."
-				</div>
-	";//<div style='padding:100px 0px 0px 280px;'>Thanks to Burda:ic - without them it would not be possible!</div>
-//<div style='padding:0px 0px 0px 405px;'>I will miss our non-existing cooperation.</div>
-				?>
-				<script type="text/javascript">
-				var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-				document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-				</script>
-				<script type="text/javascript">
-				var pageTracker = _gat._getTracker("UA-2936193-4");
-				pageTracker._trackPageview();
-				</script> 
-				<?PHP
-	echo "
-			</body>
-		</html>
-	";
-	die;
-}
 
 if (is_file($cfg['root_abs']."/lock")) {
 	echo "
@@ -121,7 +41,6 @@ if (is_file($cfg['root_abs']."/lock")) {
 			<meta name='keywords' content='Florensia,Florensia Online,Flo,Quests,Ranking,Guild,Character,Market,Guides,Items,Monsters,NPCs,Signature,Skilltree,Database,Forum,official,Fansite'>
 			<meta name='description' content='Fansite about Florensia - Join our community'>
 			<meta http-equiv='Content-Type' content='text/html;charset=utf-8'>
-			<meta name=\"verify-v1\" content=\"jstu9BbKxY9arFQGfsAANFfIpW1HGAz16XafDieYL54=\" />
 			<link rel='stylesheet' type='text/css' href='css.css'>
 			<!--[if lt IE 8]>
 			<script src='http://ie7-js.googlecode.com/svn/version/2.0(beta3)/IE8.js' type='text/javascript'></script>
@@ -139,18 +58,6 @@ if (is_file($cfg['root_abs']."/lock")) {
 						<tr><td height='50' colspan='3'></td></tr>
 					</table>
 				</div>
-	";
-				?>
-				<script type="text/javascript">
-				var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-				document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-				</script>
-				<script type="text/javascript">
-				var pageTracker = _gat._getTracker("UA-2936193-4");
-				pageTracker._trackPageview();
-				</script> 
-				<?PHP
-	echo "
 			</body>
 		</html>
 	";
@@ -223,7 +130,7 @@ require_once("{$florensia->root_abs}/class_questtext.php");
 		}
 
 //needs string/quest for output_page() if there is an error
-if ($_SERVER['SERVER_NAME']=="noxx") { $mybb->user['uid']=1; }
+if ($_SERVER['SERVER_NAME']=="localhost") { $mybb->user['uid']=1; }
 require_once($cfg['root_abs']."/forum.php");
 $db = $db_workaround;
 
